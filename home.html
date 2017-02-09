@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <script type="text/javascript" src="d3.v3.min.js"></script>
+  <script type="text/javascript" src="users.js"></script>
+  <style>
+  .point{}
+  .centroid{}
+    .kmeans{
+      display: inline-block;
+      width:45%;
+      margin:5px;
+    }
+  </style>
+</head>
+<body onload="start()">
+
+<script src="Kmeans.js"></script>
+<div class="kmeans">
+  <h1>Basic Kmeans</h1>
+<svg class="svg1"></svg>
+<div id="controls">
+<button id='kmeansB'onclick="move()">Avancer</button>
+</div>
+</div>
+<div class="kmeans">
+  <h1>Fuzzy Kmeans</h1>
+<svg class="svg2"></svg>
+<div id="control2">
+<button id='kmeansF'onclick="move2()">Avancer</button>
+</div>
+</div>
+</body>
+</html>
